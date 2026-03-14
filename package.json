@@ -1,0 +1,23 @@
+{
+  "name": "ecommerce-browserstack-tests",
+  "version": "1.0.0",
+  "description": "Cross-browser automation tests for FashionStack ecommerce site using Playwright + BrowserStack SDK",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:browserstack": "npx browserstack-node-sdk playwright test",
+    "test-browserstack": "npx browserstack-node-sdk playwright test"
+  },
+  "keywords": [
+    "playwright",
+    "browserstack",
+    "e2e",
+    "cross-browser"
+  ],
+  "author": "Preet Garg",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "browserstack-node-sdk": "^1.50.3"
+  }
+}

@@ -1,0 +1,52 @@
+# =============================
+# Set BrowserStack Credentials
+# =============================
+userName: ${BROWSERSTACK_USERNAME}
+accessKey: ${BROWSERSTACK_ACCESS_KEY}
+
+# ======================
+# BrowserStack Reporting
+# ======================
+projectName: ECommerce-BrowserStack-Tests
+buildName: FashionStack-CrossBrowser
+buildIdentifier: '#${BUILD_NUMBER}'
+
+# =======================================
+# Platforms (Browsers / Devices to test)
+# =======================================
+platforms:
+  # Desktop: Windows 11 + Chrome
+  - os: Windows
+    osVersion: 11
+    browserName: chrome
+    browserVersion: latest
+
+  # Desktop: macOS Sonoma + playwright-webkit (Safari engine)
+  - os: OS X
+    osVersion: Sonoma
+    browserName: playwright-webkit
+    browserVersion: latest
+
+  # Mobile: Samsung Galaxy S24 (Android 14) + Chrome
+  - deviceName: Samsung Galaxy S24
+    osVersion: 14.0
+    browserName: chrome
+
+# =======================
+# Parallels per Platform
+# =======================
+parallelsPerPlatform: 1
+
+# ==========================================
+# BrowserStack Local
+# ==========================================
+browserstackLocal: false
+
+# ===================
+# Debugging features
+# ===================
+debug: true
+networkLogs: true
+consoleLogs: errors
+testObservability: true
+testReporting: true

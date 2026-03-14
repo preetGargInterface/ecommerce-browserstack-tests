@@ -12,6 +12,11 @@ buildName: FashionStack-CrossBrowser
 buildIdentifier: '#${BUILD_NUMBER}'
 
 # =======================================
+# Cross Browser Automation Agent
+# =======================================
+aiAuthoring: true
+
+# =======================================
 # Platforms (Browsers / Devices to test)
 # =======================================
 platforms:

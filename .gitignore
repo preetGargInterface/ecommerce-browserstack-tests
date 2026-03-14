@@ -1,7 +1,9 @@
 node_modules/
 test-results/
 playwright-report/
+log/
 .env
 *.log
 .DS_Store
 local.yml
+playwright-browserstack-sdk.config.js
